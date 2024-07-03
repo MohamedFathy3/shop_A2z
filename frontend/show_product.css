@@ -1,0 +1,341 @@
+:root {
+    --button: #0077ff;
+    --colorbutton: #ffffff;
+    --header: #ffffff;
+    --bkbody: #e2e0e0;
+    --input: #f8f8f84b;
+    --linkcolor: #111;
+    --scrollbutton: #2222222a;
+    --table: #ffffff63;
+    --tabcolor: #033a79;
+    --descount: #9b9b9b;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bkbody);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #313110;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header);
+    filter: drop-shadow(5px 10px 16px var(--descount));
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+form input {
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    background-color: var(--input);
+    border: #fff 1px solid;
+}
+
+form button {
+    width: 10%;
+    height: 30px;
+    background-color: var(--button);
+    border: #fff 1px solid;
+    border-radius: 5px;
+    color: var(--colorbutton);
+}
+
+.car_shoping button {
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--button);
+    color: var(--colorbutton);
+}
+
+main {
+
+    display: flex;
+
+}
+section,.data_product,main .data_product .imge img,
+.data_product .deteils h2 ,.data_product .deteils p,
+.deteils .data_price ,.deteils button,.deteils .data_price .stars,.ditals_product {
+    position:relative;
+}
+
+section {
+
+  
+    right: 220px;
+    top: 100px;
+    background-color: white;
+}
+
+.data_product {
+ 
+    right: 130px;
+    height: 400px;
+}
+
+main .data_product {
+    width: 600px;
+    border-radius: 3px;
+    display: flex;
+}
+
+main .data_product .imge img {
+    width: 250px;
+    height: 300px;
+  
+    border-radius: 10px;
+
+}
+
+main .data_product .Imge_bar img {
+    width: 50px;
+}
+
+.data_product .deteils h2 {
+    width: 277px;
+    font-size: 18px;
+    font-weight: 700;
+  
+    top: 48px;
+padding-left: 4px;
+}
+
+.data_product .deteils h3 {
+    background-color: #276076;
+    padding: 2px;
+    border-radius: 2px;
+    color: white;
+    font-size: 11px;
+    width: 68px;
+    margin-top: 8px;
+    margin-bottom: -22px;
+}
+
+.data_product .deteils p {
+  
+    top: 60px;
+    font-size: 0.875rem;
+    border-bottom: 2px solid #f1f1f2;
+}
+
+.deteils .data_price {
+   
+    top: 40px;
+}
+
+.deteils .data_price del {
+    position: absolute;
+    left: 55px;
+    top: 51px;
+    color: var(--descount);
+}
+.deteils .data_price p {
+    border: none;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    color: green;
+}
+
+.deteils button{
+  
+    top: 202px;
+    right: 51px;
+    width: 211px;
+    height: 35px;
+    color: var(--bkbody);
+    background-color: var(--button);
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+.deteils button a{
+    font-size: 30px;
+}
+.deteils .data_price .stars {
+  
+ 
+    top: 85px;
+    color: orange;
+    cursor: pointer;
+
+}
+
+    /* ditals all  */
+.ditals_product{
+    right: 145px;
+    background-color: white;
+    width: 181px;
+    border-radius: 4px;
+    top: 100px;
+    }
+.ditals_product h2{
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: solid 2px var(--descount);
+}
+ .ditals_product p{font-size: 16px;
+    font-weight: 500;}
+.ditals_product .add{
+    width: 107px;
+    position: relative;
+    left: -35px;
+    top: 68px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: var(--button);
+    color: white;
+}
+.slid{
+    display: none;
+}
+.description_phone{
+    display: none;
+}
+.mida_phone{
+    display: none;
+}
+    /* end */
+@media (min-width:200px) and (max-width:600px) {
+
+    main{
+    display: none;
+   }
+   .mida_phone{
+    display: block;
+    position: relative;
+    right: 40px;
+   }
+  .slid{
+    width: 400px;
+    display: block;
+}
+  .slid img{
+    position: relative;
+    left: -57px;
+    width: inherit;
+    top: 21px;
+  }
+  header{
+    width: 600px;
+  }
+  .ar_shoping button{
+    outline: none;
+    border: none;
+    color: var(--button);
+  }
+  .ar_shoping button i{
+    font-size: 30px;
+  }
+  .span{
+    display: flex;
+  }
+  .span span:hover{
+    background-color: var(--button);
+  }
+  .span span img{
+    width: 220px;
+  }
+  .span span{
+   
+    background-color: transparent;
+    position: relative;
+    border: solid 5px white;
+    border-radius: 206px;
+    top: -25px;
+    right: 201px;
+    padding: 5px;
+    margin: 6px;
+
+  }
+  .active,
+.dot:hover {
+    background-color: #717171;
+}
+.description_phone{
+    display: block;
+    position: relative;
+    right: 60px;
+    width: 400px;
+}
+.description_phone h1{
+    border-bottom:2px solid var(--descount) ;
+    padding: 10px;
+    color: #0077ff;
+    font-weight: 700;
+    width:inherit;
+}.description_phone h1 span{
+color:black;
+}
+.description_phone p{
+    width:inherit;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    margin-top: 15px;
+}
+.description_phone p span{
+    font-size: 25px;
+    margin: 5px;
+    color: var(--button);
+}
+.description_phone .stars{
+    color: orange;
+    font-size: 40px;
+}
+.description_phone h2{
+    color: green;
+}
+.description_phone h2 span{
+    color: var(--button);
+}
+.description_phone button{
+    width: 400px;
+    margin: 16px;
+    padding: 5px;
+    height: 50px;
+    background-color: var(--button);
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 40px;
+    transform: translateX(34px);
+
+
+}
+}
