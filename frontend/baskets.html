@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z</title>
+    <link rel="stylesheet" href="style_A2Z.css">
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body dir="rtl">
+    <header>
+        <div class="logo">
+           <h1><img src="log.png" width="80px"><i>A2Z</i></h1>
+        </div>
+        <form class="search" action="">
+            <input type="search" name="" id="" placeholder="بحث فى A2Z">
+            <button type="submit">بحث</button>
+        </form>
+        <div class="car_shoping">
+            <a href=""><button type="button">تسجيل الدخول</button></a>
+            <a href=""><button type="button">السلة</button></a>
+        </div>
+    </header>
+    <main>
+       <section>
+        <div class="basket">
+            <div class="card">
+                <div class="head_card">
+                    <h2>سلة المنتجات</h2>
+                </div>
+                <br>
+                <hr>
+                <div class="prodact_baskte">
+                     <div class="img">
+                          <img src="img/redmi.jpg">
+                     </div>
+                     <div class="text">
+                        <h2>Ridme c53</h2>
+                        <h3>موبايلRidme مساحة 256G R6 لون Gold,blak</h3>
+                     </div>
+                     <div class="price">
+                        <h2>10000</h2>
+                        <span><del>15000</del></span>
+                     </div>
+                </div>
+                <div class="foot_card">
+                    <a href=""><button>حذف</button></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="total_price">
+            <div class="head_total">
+                <h2>اجمالى السعر</h2><br>
+            </div><hr><br>
+            <div class="price_totul">
+                <h2>الاجمالى</h2>
+                <h1>10000</h1>
+            </div><br><hr>
+            <div class="button_total">
+               <a href=""><button>الاجمالى (250)</button></a>
+            </div>
+        </div>
+       </section>
+       <section >
+        <!--عروض اليوم الواحد-->
+        <div class="offer_oneday">
+          <div class="head">
+            <h2>عروض اليوم</h2>
+           <h2>24h:00m:00s</h2>
+           <button><a href="">تسوق المزيد ></a></button>
+          </div>
+          <div class="button_scroll">
+                <button class="next" onclick="scrollleft()"> < </button>
+                <button class="prov" onclick="scrollright()"> > </button>
+          </div>
+      <div class="offer_img">
+        <div class="card">
+        <img src="img/a.jpg" alt="">
+        <div class="text">
+          <h3>smart phone</h3>
+          <h3>10000</h3>
+          <button><a href="">تسوق الان</a></button>
+          
+        </div>
+        </div>
+        <div class="card">
+          <img src="img/m (4).jpeg" alt="">
+          <div class="text">
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/m (2).jpeg" alt="">
+          <div class="text">
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/m (2).jpeg" alt="">
+          <div class="text">
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/m (1).jpeg" alt="">
+          <div class="text">
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/ts (2).jpg" alt="">
+          <div class="text">
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/ts (1).jpg" alt="">
+          <div class="text">
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/t.jpg" alt="">
+          <div class="text">
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/tv.jpg" alt="">
+          <div class="text"> 
+              <h3>smart phone</h3>
+              <h3>10000</h3>
+              <button>تسوق الان</button>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section><br>
+ 
+         
+    </main>
+    
+    <script src="script.js"></script>
+    <script>
+        
+function scrollleft(){
+    var left=document.querySelector(".offer_img")
+    left.scrollBy(350,0)
+
+}
+function scrollright(){
+    var right=document.querySelector(".offer_img")
+    right.scrollBy(-350,0)
+}
+function scrollleft1(){
+    var left=document.querySelector(".offer_dvice_cards")
+    left.scrollBy(350,0)
+
+}
+function scrollright1(){
+    var right=document.querySelector(".offer_dvice_cards")
+    right.scrollBy(-350,0)
+}
+    </script>
+</body>
+</html>

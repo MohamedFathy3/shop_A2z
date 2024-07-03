@@ -1,0 +1,240 @@
+:root{
+    --button:#0077ff;
+    --colorbutton:#ffffff;
+    --header:#ffffff;
+    --bkbody:#e2e0e0;
+    --input:#f8f8f84b;
+    --linkcolor:#111;
+    --scrollbutton:#2222222a;
+    --table:#ffffff63;
+    --tabcolor:#033a79;
+    --logo:#0065a4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+/*product dvices*/
+.depart{
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--header);
+    width:1135px;
+    height: 200px;
+    border-radius: 10px;
+}
+.dpart_name{
+    width:1135px;
+    text-align: center;
+    margin-top: 10px;
+}
+.head2{
+    display: flex;
+     margin-right: 50px;
+    align-items: center;
+    gap: 80px;
+
+}
+.head2 h2{
+    color:var(--button);
+}
+.head2 a{
+    color: var(--button);
+}
+.head2 button{
+   background-color: var(--scrollbutton);
+   border: none;
+   height: 30px;
+   width: 120px;
+   text-align: center;
+   border-radius: 10px;
+   transform: translateX(-700px);
+}
+.offers_computer{
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--header);
+    width:1135px;
+    height: 270px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.offer_dvice_computer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.offer_dvice_computer img{
+    width: 350px;
+    height: 200px;
+ }
+ .filter{
+    width: 300px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: var(--header);
+    line-height: 40px;
+ } 
+ .filter a{
+    color: var(--linkcolor);
+ }
+ .filter form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+ }
+ .HDD_filteri, .obration_filter,.filter_brand{
+    margin-right: 20px;
+    margin-top: 10px;
+ }
+ .price_filter{
+    width: 300PX;
+
+ }
+ .price_minandmax{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+ }
+ .price_filter input{
+    width: 90%;
+    margin-right: 10px;
+ }
+ 
+ .prodacts{
+    width:820px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header);
+    border-radius: 20px
+ }
+ .prodacts .card img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 20px;
+ }
+ .prodacts .card{
+    width: 250px;
+    height: 450px;
+    text-align: center;
+    background-color: var(--header);
+    border-radius: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    transition: 0.5s;
+ }
+ .prodacts .card:hover{
+    filter: drop-shadow(10px 10px 10px var(--button)) ;
+    transform: translateY(-12px);
+    cursor: pointer;
+ }
+ .prodacts .card button{
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: var(--button);
+    color: var(--colorbutton);
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.prodacts .card button:hover{
+    filter: drop-shadow(0px 0px 0px var(--button)) ;
+    transform: translateY(-2px);
+    cursor: pointer;
+
+}
+.prodacts .card a{
+    color: var(--linkcolor);
+}
+
+/*خصومات المنتجات-*/
+
+.offer_oneday{
+    background-color: var(--header);
+    width:1135px;
+    height: 550px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header_dvice h2{
+   margin-right: 430px;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+.offer_dvice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.offer_dvice img{
+    width: 200px;
+    height: 200px;
+}
+.offer_dvice_cards{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    gap: 30px;
+    height: 500px;
+    transform: translateY(-60px);
+   
+}
+.offer_dvice_cards img {
+    width: 250px;
+    height: 150px;
+    margin-top: 20px;
+}
+.offer_dvice_cards::-webkit-scrollbar{
+    width: 0px;
+  }
+  .offer_dvice_cards::-webkit-scrollbar-thumb{
+      background: #33333300;
+  }
+  .offer_dvice_cards .card{
+    line-height: 40px;
+   transition: 0.5s;
+   width: 300px;
+   height: 400px;
+   background-color: var(--header);
+   border-radius: 20px;
+   text-align: center;
+   margin-right: 20px;
+   padding-bottom: 10px;
+   
+}
+.offer_dvice_cards .card a{
+    color: var(--linkcolor);
+    }
+.offer_dvice_cards .card button{
+        border: none;
+        width: 150px;
+        height: 30px;
+        background-color: var(--button);
+        color: var(--colorbutton);
+        border-radius: 10px;
+        font-weight: bold;
+    }
+ .offer_dvice_cards .card:hover{
+        filter: drop-shadow(10px 10px 10px var(--button)) ;
+        transform: translateY(-12px);
+        cursor: pointer;
+     }
+.offer_dvice_cards button:hover{
+        background-color: var(--bkbody);
+       color: var(--linkcolor);
+        
+    }

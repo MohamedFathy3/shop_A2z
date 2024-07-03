@@ -1,0 +1,69 @@
+:root{
+    --button:#0077ff;
+    --colorbutton:#ffffff;
+    --header:#ffffff;
+    --bkbody:#e2e0e0;
+    --input:#f8f8f84b;
+    --linkcolor:#111;
+    --scrollbutton:#2222222a;
+    --table:#ffffff63;
+    --tabcolor:#033a79;
+    --logo:#0065a4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+/*profile user*/
+.profile{
+    background-color: var(--header);
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 100px;
+}
+.profile_img img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 50px;
+    border: 1px solid var(--tabcolor);
+}
+.profile_button {
+    width: 100%;
+  
+}
+.profile_button button {
+    width: 90%;
+    height: 40px;
+    background-color: var(--button);
+    border: none;
+    border-radius: 10px;
+  
+}
+.profile_button a{
+  color: var(--colorbutton);
+}
+.profile_detalis{
+    background-color: var(--header);
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+.caption{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+nav{
+    margin-right: 50px;
+    margin-top: 50px;
+}
+nav ul{
+    list-style:circle;
+    line-height: 50px;
+    font-size: 25px;
+}

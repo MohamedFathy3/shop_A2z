@@ -1,0 +1,56 @@
+:root{
+    --button:#0077ff;
+    --colorbutton:#ffffff;
+    --header:#ffffff;
+    --bkbody:#e2e0e0;
+    --input:#f8f8f84b;
+    --linkcolor:#111;
+    --scrollbutton:#2222222a;
+    --table:#ffffff63;
+    --tabcolor:#033a79;
+    --logo:#0065a4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+   /*table order*/
+   .cart{
+    display: flex;
+    justify-content: center;
+   
+}
+table{
+    border: solid 1px var(--linkcolor);
+    background-color: var(--table);
+    width: 600px;
+    margin-top: 200px;
+    text-align: center;
+    color: var(--tabcolor);
+    font-weight: bold;
+}
+th,td{
+    height: 40px;
+}
+caption{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--button);
+}
+.checkout{
+    margin-right: 430px;
+    margin-top: 10px;
+}
+.checkout button{
+    background-color: var(--scrollbutton);
+    border: none;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+    transform: translateX(-380px);
+}
+.checkout a{
+    color: var(--button);
+}

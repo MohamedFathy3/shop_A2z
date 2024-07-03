@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2Z</title>
+    <link rel="stylesheet" href="style_A2Z.css">
+</head>
+<body dir="rtl">
+    <header>
+        <div class="logo">
+           <img src="img/A2Z.webp" width="80px">
+        </div>
+        <form action="">
+            <input type="search" name="" id="" placeholder="بحث فى A2Z">
+            <button type="submit">بحث</button>
+        </form>
+        <div class="car_shoping">
+            <a href=""><button type="button">تسجيل الدخول</button></a>
+            <a href=""><button type="button">السلة</button></a>
+        </div>
+    </header>
+    <main>
+     
+    <form class="form_checkout" method="POST" dir="rtl">
+        {% csrf_token %}
+       <h2 class="log_in">الدفع</h2>
+    <input type="text" placeholder="الاسم الاول" name="t1"><br>
+    <input type="text" placeholder="الاسم الثانى" name="t1"><br>
+    <input type="email" placeholder="البريد الالكترونى" name="t2"><br>
+    <input type="tel" placeholder="الهاتف" name="t4"><br>
+    <input type="text" placeholder="البلد" name="t5"><br>
+    <input type="text" placeholder="المحافظة" name="t1"><br>
+    <input type="text" placeholder="العنوان" name="t1"><br>
+    <input class="but" type="submit" value="تاكيد ">
+   </form>
+    </main>
+    <footer>
+        
+
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        
+function scrollleft(){
+    var left=document.querySelector(".offer_img")
+    left.scrollBy(350,0)
+
+}
+function scrollright(){
+    var right=document.querySelector(".offer_img")
+    right.scrollBy(-350,0)
+}
+function scrollleft1(){
+    var left=document.querySelector(".offer_dvice_cards")
+    left.scrollBy(350,0)
+
+}
+function scrollright1(){
+    var right=document.querySelector(".offer_dvice_cards")
+    right.scrollBy(-350,0)
+}
+    </script>
+</body>
+</html>

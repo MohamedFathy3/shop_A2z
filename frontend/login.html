@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand</title>
+    {% load static %}
+    <link rel="stylesheet" href="style_A2Z.css">
+</head>
+<body>
+    
+    <form class="form" method="POST">
+         {% csrf_token %}
+        <h2 class="log_in">تسجيل دخول</h2>
+     <input type="email" placeholder="Email" name="t2"><br>
+     <input type="password" placeholder="Password" name="t3"><br>
+     <input class="but" type="submit" value="تسجيل">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+:root{
+    --button:#0077ff;
+    --colorbutton:#ffffff;
+    --header:#ffffff;
+    --bkbody:#e2e0e0;
+    --input:#f8f8f84b;
+    --linkcolor:#111;
+    --scrollbutton:#2222222a;
+    --table:#ffffff63;
+    --tabcolor:#990707;
+}
+.basket_view {
+    display: flex;
+    gap: 40px;
+}
+.basket_view img{
+ width: 530px;
+ height: 300px;
+ border-radius: 20px;
+}
+.prodact_basket .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 500px;
+    height: 300px;
+    line-height: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: var(--header);
+    transition: .5s;
+}
+.prodact_basket .card:hover{
+    filter: drop-shadow(10px 10px 10px var(--button)) ;
+    cursor: pointer;
+    transform: translateY(-12px);
+    
+}
+.prodact_basket .card span{
+  color: var(--tabcolor);
+  font-weight: bolder;
+  font-size: large;
+}
+.prodact_basket .card a{
+    color: var(--linkcolor);
+}
+.prodact_basket .card button{
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: var(--button);
+    color: var(--colorbutton);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.prodact_basket .card button:hover{
+    background-color: var(--bkbody);
+       color: var(--linkcolor);
+       filter: drop-shadow(10px 10px 10px var(--button)) ;
+       cursor: pointer;
+}
+.prodact_basket .card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.slid img{
+    width: 600px;
+    height: 350px;
+}
+.button_slid{
+    position: absolute;
+    left: 100px;
+    top:760px;
+    z-index: 5;
+}
+.button_slid button{
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: var(--button);
+    color: var(--colorbutton);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 1s;
+}
+.button_slid button:hover{
+    background-color: var(--bkbody);
+    color: var(--button);
+    filter: drop-shadow(10px 10px 10px var(--button)) ;
+    cursor: pointer;
+}
+.offers_prodacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 600px;
+   
+}
+.offers_prodacts .card img{
+    width: 200px;
+    height: 150px;
+    margin-top:25px ;
+}
+.offers_prodacts .card{
+    width: 250px;
+    height: 410px;
+    text-align: center;
+    background-color: var(--header);
+    border-radius: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.offers_prodacts .card:hover{
+    filter: drop-shadow(10px 10px 10px var(--button)) ;
+    transform: translateY(-12px);
+    cursor: pointer;
+}
+.offers_prodacts .card button{
+    border: none;
+    width: 150px;
+    height: 30px;
+    background-color: var(--button);
+    color: var(--colorbutton);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.offers_prodacts .card button:hover{
+    filter: drop-shadow(0px 0px 0px var(--button)) ;
+    transform: translateY(-2px);
+    cursor: pointer;
+}

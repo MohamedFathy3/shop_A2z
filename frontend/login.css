@@ -1,0 +1,48 @@
+:root{
+    --button:#0077ff;
+    --colorbutton:#ffffff;
+    --header:#ffffff;
+    --bkbody:#e2e0e0;
+    --input:#f8f8f84b;
+    --linkcolor:#111;
+    --scrollbutton:#2222222a;
+    --table:#ffffff63;
+    --tabcolor:#033a79;
+    --logo:#0065a4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+ /*form login*/
+ .form{
+    width: 500px;
+  margin-left: 400px;  
+  margin-top: 300px;
+  background-color: var(--scrollbutton);
+  border: 1px solid var(--button);
+  text-align: center;
+  border-radius: 20px;
+}
+.form input{
+    width:400px  ;
+    height: 30px;
+    text-align: center;
+    background-color: var(--input);
+    border: #fff 1px solid ;
+    border-radius: 10px;
+    margin-top: 40px;
+
+}
+.form .but{
+    width: 100px;
+    height: 30px ;
+    background-color: var(--button);
+    border: #fff 1px solid ;
+    border-radius: 5px;
+    color: var(--colorbutton);
+    margin-bottom: 10px;
+}
+
+
